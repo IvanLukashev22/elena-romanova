@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Елена Романова — Психолог · Онлайн-консультации</title>
+  <meta name="description" content="Индивидуальные онлайн-консультации психолога. Тревога, выгорание, отношения, жизненные перемены."/>
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css?v=9"/>
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <a class="wordmark" href="#top" data-bind="brand">Елена Романова</a>
+    <nav class="nav-desktop" aria-label="Основная">
+      <a href="#requests">Запросы</a>
+      <a href="#about">О подходе</a>
+      <a href="#process">Как проходит</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#pricing">Стоимость</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="header-actions">
+      <a class="book-link" href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" target="_blank" rel="noopener noreferrer"><span data-bind="navCta">Записаться</span> <span aria-hidden="true">↗</span></a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Меню" aria-expanded="false"><span></span></button>
+    </div>
+  </header>
+
+  <div class="nav-screen" id="nav-screen" aria-hidden="true">
+    <a href="#requests">Запросы</a>
+    <a href="#about">О подходе</a>
+    <a href="#process">Как проходит</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#pricing">Стоимость</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#contact">Запись</a>
+    <a class="cta nav-screen-cta" href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" target="_blank" rel="noopener noreferrer"><span data-bind="navCta">Записаться</span> ↗</a>
+  </div>
+
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <span class="orb orb-a"></span>
+        <span class="orb orb-b"></span>
+        <span class="orb orb-c"></span>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="label hero-label" data-bind="heroLabel">Частная практика · Онлайн по России</p>
+          <h1 class="hero-title">
+            <span class="line"><span data-bind="heroTitle">Ясность и опора</span></span>
+            <span class="line"><span class="accent" data-bind="heroTitleAccent">в период перемен</span></span>
+          </h1>
+          <p class="hero-sub" data-bind="heroSub"></p>
+          <ul class="hero-tags" aria-label="Основные запросы">
+            <li><a href="#requests">Тревога</a></li>
+            <li><a href="#requests">Выгорание</a></li>
+            <li><a href="#requests">Отношения</a></li>
+            <li><a href="#requests">Перемены</a></li>
+          </ul>
+          <div class="hero-actions">
+            <a class="cta" href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" target="_blank" rel="noopener noreferrer"><span data-bind="heroCta">Записаться на консультацию</span> <span class="arr" aria-hidden="true">↗</span></a>
+            <a class="cta-text" href="#process" data-bind="heroSecondary">Как проходит первая встреча</a>
+          </div>
+          <p class="cta-note" data-bind="heroNote"></p>
+          <div class="hero-meta">
+            <span class="meta-chip"><span class="dot sage"></span>Онлайн · Россия</span>
+            <span class="meta-chip" data-bind="duration">60 минут</span>
+            <span class="meta-chip meta-price" data-bind="price">3 500 ₽</span>
+          </div>
+        </div>
+        <aside class="hero-visual" aria-label="Психолог">
+          <div class="hero-frame">
+            <img id="hero-photo" class="hero-photo" alt="Елена Романова — психолог" hidden/>
+            <div class="hero-photo-fallback" id="hero-photo-fallback" aria-hidden="true"></div>
+            <div class="hero-frame-badge">
+              <strong data-bind="brand">Елена Романова</strong>
+              <span><span data-bind="education"></span> · <span data-bind="experience"></span></span>
+            </div>
+          </div>
+          <div class="hero-float sage-card" aria-hidden="true">
+            <span class="float-label">Формат</span>
+            <span class="float-value">Онлайн · 60 мин</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="trust-bar" aria-label="Ключевые факты">
+      <div class="container trust-row">
+        <div class="trust-item reveal">
+          <span class="trust-num">МГУ</span>
+          <span class="trust-txt">Клиническая психология</span>
+        </div>
+        <div class="trust-item reveal d1">
+          <span class="trust-num">2019+</span>
+          <span class="trust-txt">Частная практика</span>
+        </div>
+        <div class="trust-item reveal d2">
+          <span class="trust-num">CBT · ACT</span>
+          <span class="trust-txt">Доказательные методы</span>
+        </div>
+        <div class="trust-item reveal d3">
+          <span class="trust-num">АКПП</span>
+          <span class="trust-txt">Член ассоциации</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec-sage" id="requests">
+      <div class="container">
+        <div class="sec-head split">
+          <div class="reveal">
+            <span class="label">Запросы</span>
+            <h2 class="sec-title" data-bind="requestsTitle">С чем можно обратиться</h2>
+          </div>
+          <p class="lead muted reveal d1" data-bind="requestsLead"></p>
+        </div>
+        <div class="requests-grid" id="requests-list"></div>
+        <div class="sec-cta reveal">
+          <a class="cta" href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" target="_blank" rel="noopener noreferrer"><span data-bind="requestsCta"></span> <span class="arr">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="about">
+      <div class="container">
+        <div class="about-grid" id="about-grid">
+          <div class="reveal portrait-col" id="portrait-col">
+            <div class="portrait" id="portrait">
+              <img id="portrait-img" alt="Психолог" hidden/>
+              <div class="portrait-placeholder" id="portrait-ph" hidden>Портрет</div>
+              <div class="portrait-glow" aria-hidden="true"></div>
+              <div class="portrait-caption" data-bind="photoCaption">Елена Романова</div>
+            </div>
+          </div>
+          <div class="about-copy">
+            <div class="reveal">
+              <span class="label">О специалисте</span>
+              <h2 class="sec-title" data-bind="aboutTitle">О подходе</h2>
+            </div>
+            <dl class="creds reveal d1">
+              <div><dt>Образование</dt><dd data-bind="education"></dd></div>
+              <div><dt>Метод</dt><dd data-bind="method"></dd></div>
+              <div><dt>Опыт</dt><dd data-bind="experience"></dd></div>
+              <div><dt>Статус</dt><dd data-bind="membership"></dd></div>
+            </dl>
+            <div class="about-body reveal d1">
+              <p class="about-lead" data-bind="aboutP1"></p>
+              <p data-bind="aboutP2"></p>
+            </div>
+            <div class="principles" id="principles"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec-line sec-soft" id="process">
+      <div class="container">
+        <div class="process-grid">
+          <div class="process-sticky reveal">
+            <span class="label">Маршрут</span>
+            <h2 class="sec-title" data-bind="processTitle">Как проходит консультация</h2>
+            <p class="lead muted process-lead" data-bind="processLead"></p>
+            <a class="cta process-cta" href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" target="_blank" rel="noopener noreferrer"><span data-bind="processCta"></span> <span class="arr">↗</span></a>
+          </div>
+          <div class="steps" id="process-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sec-line" id="reviews">
+      <div class="container">
+        <div class="sec-head reveal">
+          <div>
+            <span class="label">Голоса клиентов</span>
+            <h2 class="sec-title" data-bind="reviewsTitle">Отзывы</h2>
+            <p class="reviews-note" data-bind="reviewsNote"></p>
+          </div>
+        </div>
+        <div class="reviews-grid" id="reviews-list"></div>
+        <div class="sec-cta reveal">
+          <a class="cta-text" href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" target="_blank" rel="noopener noreferrer"><span data-bind="reviewsCta"></span> ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="pricing-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="pricing-grid">
+          <div class="reveal">
+            <span class="label pricing-label">Условия</span>
+            <h2 class="sec-title pricing-title" data-bind="pricingTitle">Стоимость</h2>
+            <div class="price-row">
+              <div class="price-val" data-bind="price">3 500 ₽</div>
+              <div class="price-dur">/ <span data-bind="duration">60 минут</span></div>
+            </div>
+            <p class="pricing-desc" data-bind="pricingDesc"></p>
+            <a class="cta cta-light" href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" target="_blank" rel="noopener noreferrer"><span data-bind="pricingCta"></span> <span class="arr">↗</span></a>
+          </div>
+          <div class="price-rules reveal d2" id="pricing-rules"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="faq">
+      <div class="container">
+        <div class="faq-grid">
+          <div class="faq-side reveal">
+            <span class="label">FAQ</span>
+            <h2 class="sec-title" data-bind="faqTitle">Частые вопросы</h2>
+            <p class="lead muted faq-side-lead">Если ответа нет — напишите напрямую.</p>
+            <a class="cta-ghost faq-side-cta" href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" target="_blank" rel="noopener noreferrer">Задать вопрос ↗</a>
+          </div>
+          <div id="faq-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="finale" id="contact">
+      <div class="finale-glow" aria-hidden="true"></div>
+      <div class="container reveal">
+        <span class="label finale-label">Запись</span>
+        <h2 class="finale-title" data-bind="finaleTitle"></h2>
+        <p data-bind="finaleSub"></p>
+        <a class="cta cta-light" href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" target="_blank" rel="noopener noreferrer"><span data-bind="finaleCta"></span> <span class="arr">↗</span></a>
+        <p class="finale-meta" data-bind="finaleMeta"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand" data-bind="brand">Елена Романова</div>
+          <p class="muted footer-about" data-bind="footerAbout"></p>
+        </div>
+        <div>
+          <div class="label footer-label">Часы · МСК</div>
+          <p class="muted footer-text" data-bind="footerHours"></p>
+        </div>
+        <div>
+          <div class="label footer-label">Этика</div>
+          <p class="muted footer-text" data-bind="footerEthics"></p>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span data-bind="copyright"></span>
+        <a href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" data-bind="telegramHandle" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="sticky-cta" id="sticky-cta" href="https://t.me/psychologist_practice" data-bind-href="telegramUrl" target="_blank" rel="noopener noreferrer"><span data-bind="stickyCta"></span> ↗</a>
+
+  <button class="cms-fab" id="cms-open" type="button" hidden><span class="live"></span> Редактировать</button>
+
+  <div class="cms-drawer" id="cms-drawer">
+    <div class="cms-backdrop" id="cms-backdrop"></div>
+    <div class="cms-panel" role="dialog" aria-label="Редактор контента">
+      <header>
+        <div>
+          <div class="font-display cms-title">Редактор</div>
+          <p>Открывается по адресу /?edit · сохраняется в браузере</p>
+        </div>
+        <button id="cms-close" type="button" aria-label="Закрыть" class="cms-x">×</button>
+      </header>
+      <div class="cms-body" id="cms-fields"></div>
+      <footer>
+        <button class="cms-save" id="cms-save" type="button">Сохранить</button>
+        <button class="cms-secondary" id="cms-export" type="button">Скачать JSON</button>
+        <button class="cms-secondary" id="cms-reset" type="button">Сбросить</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
